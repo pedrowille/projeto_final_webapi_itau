@@ -1,0 +1,33 @@
+create database projetoconta;
+create table tbcliente(
+id integer not null auto_increment primary key,
+nome varchar(100),
+cpf varchar(20) unique,
+telefone varchar(15),
+email varchar(100) unique);
+
+create table tbconta (
+numero integer primary key,
+agencia integer,
+tipo integer,
+saldo double,
+id_titular integer not null,
+constraint titular foreign key (id_titular) references tbcliente (id));
+
+Pâmera
+insert into tbcliente values (null, "Pâmera", "12345678910", "912345678", "pamera@pamera.com");
+insert into tbconta values (1001, 2122, 0, 50.00, 1);
+insert into tbconta values (1002, 2122, 1, 1200.00, 1);
+insert into tbconta values (1003, 2122, 2, 5000.00, 1);
+
+Pedro
+insert into tbcliente values (null, "Pedro", "42267739964", "977775555", "pedro@gmail.com");
+insert into tbconta values (2001, 2123, 0, 18.00, 2);
+insert into tbconta values (2002, 2123, 1, 18.00, 2);
+insert into tbconta values (2003, 2123, 2, 18.00, 2);
+
+Jefferson
+insert into tbcliente values (null, "Jefersson", "01987654321", "908100406", "jefferson@gmail.com");
+insert into tbconta values (3001, 3123, 0, 18.00, 3);
+insert into tbconta values (3002, 3123, 1, 18.00, 3);
+insert into tbconta values (3003, 3123, 2, 18.00, 3);
