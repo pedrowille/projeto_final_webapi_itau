@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Contas</title>
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="src/imagens/logo.png" alt="" width="100" height="24" class="d-inline-block align-text-top">
+                Isirilo
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex align-items-end " id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="home.html">Home</a></li>
+                  <li><a class="dropdown-item" href="minha.html">Minha Conta</a></li>
+                  <li><a class="dropdown-item" href="index.html">Todas as Contas</a></li>
+                  <li><a class="dropdown-item" href="excluir.html">Encerrar Conta</a></li>
+
+                </ul>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<body >
+   
+
+    <h1>Formulário... Em construção</h1>
+    <br><br>
+    <form onsubmit="cadastraUsuario()" class="row g-3">
+        
+        <div class="col-md-6">
+        <input type="text" id="numero" placeholder="Numero da Conta..." />
+        </div>
+
+        <div class="col-md-6">
+        <input type="text" id="agencia" placeholder="Agencia..." />
+        </div>
+
+        <div class="col-md-6">
+        <input type="text" id="tipo" placeholder="tipo..." />
+        </div>
+
+        <div class="col-md-6">
+        <input type="text" id="saldo" placeholder="Deposite..." />
+        </div>
+        
+        <br><br>
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center" style="margin: 4%;">
+
+        <button class="btn btn-outline-success">Cadastrar</button>
+
+        </div>
+    </form>
+   
+    
+
+    <script src="post.js"></script>
+    <script src="axios.js"></script>
+    <script src="jquery.js"></script>
+
+    
+
+    
+<!-- Aqui é o  COMEÇO do rodapé -->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my- 10 border-top bg-dark" style="position:fixed; bottom:0; height:auto; margin-top:40px;
+width:100%; text-align:center">
+    <p class="col-md-4 mb-0 text-muted">© 2021 Grupo 2</p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <img src="src/imagens/logo.png" alt="" width="240" height="48" class="d-inline-block align-text-top">
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end ">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Todas as Contas</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Minha Conta</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Nova Conta</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Encerrar Conta</a></li>
+      <!--<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>-->
+    </ul>
+  </footer>
+    <!-- Aqui é o FINAL do rodapé -->
+</body>
+<!-- <script src="script.js"></script>--></html>

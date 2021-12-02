@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Contas</title>
+</head>
+
+
+<body >
+
+  <header>
+    <!-- Aqui é o COMEÇO da BARRA -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="src/imagens/logo.png" alt="" width="100" height="24" class="d-inline-block align-text-top">
+              Isirilo
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex align-items-end " id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="home.html">Home</a></li>
+                <li><a class="dropdown-item" href="minha.html">Minha Conta</a></li>
+                <li><a class="dropdown-item" href="index.html">Todas as Contas</a></li>
+                <li><a class="dropdown-item" href="excluir.html">Encerrar Conta</a></li>
+
+              </ul>
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav><!-- Aqui é o FIM da BARRA -->
+  </header>
+
+
+  <h1>Todas as minhas Contas</h1>
+  <br>  <br>
+  
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-12">
+              <table id="tblContas" class="table table-striped table-dark" style="align-content: center;" >
+                  <thead class="thead-light">
+                      <tr>
+                          <th>Número da Conta</th>
+                          <th>Número da Agência</th>
+                          <th>Tipo</th>
+                          <th>Saldo</th>
+                          <th > Dados do Cliente</th>
+                          
+                          <th style="width: 50px">
+                          </th>
+                          <th style="width: 50px">
+                          </th>
+                      </tr>
+                  </thead>
+                  <tbody></tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+
+    
+
+    
+<!-- Aqui é o  COMEÇO do rodapé -->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my- 10 border-top bg-dark" style="position:fixed; bottom:0; height:auto; margin-top:40px;
+width:100%; text-align:center">
+    <p class="col-md-4 mb-0 text-muted">© 2021 Grupo 2</p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <img src="src/imagens/logo.png" alt="" width="240" height="48" class="d-inline-block align-text-top">
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end ">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Todas as Contas</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Minha Conta</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Nova Conta</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Encerrar Conta</a></li>
+      <!--<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>-->
+    </ul>
+  </footer>
+    <!-- Aqui é o FINAL do rodapé -->
+</body>
+
+<div class="modal fade" id="modalPesquisarConta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Informações da Conta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="nameBusca" class="col-form-label">Numero</label>
+            <input type="text" class="form-control" id="nameBusca">
+          </div>
+          <button type="button" class="btn btn-success" onclick="pesquisarConta()">Buscar</button>
+        </form>
+
+				<div style="height: 300px;overflow: scroll;">
+					<table class="table" id="tabelaresultados">
+						<thead>
+							<tr>
+								<th scope="col">Numero</th>
+								<th scope="col">Agencia</th>
+								<th scope="col">Tipo</th>
+								<th scope="col">Saldo</th>
+                <th scope="col">Dados do Cliente</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+				</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+<script src="tabela.js"></script>
+</html>
