@@ -15,8 +15,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="src/imagens/logo.png" alt="" width="100" height="24" class="d-inline-block align-text-top">
-                Isirilo
+                <img src="src/imagens/logo.png" alt="" width="160" height="32" class="d-inline-block align-text-top">
+                <strong>Isirilo</strong>
               </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,9 +29,9 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                   <li><a class="dropdown-item" href="home.html">Home</a></li>
-                  <li><a class="dropdown-item" href="#">Minha Conta</a></li>
-                  <li><a class="dropdown-item" href="#">Nova Conta</a></li>
-                  <li><a class="dropdown-item" href="#">Encerrar Conta</a></li>
+                  <li><a class="dropdown-item" href="index.html">Todas as contas</a></li>
+                  <li><a class="dropdown-item" href="nova.html">Nova Conta</a></li>
+                  
 
                 </ul>
                 
@@ -42,46 +42,96 @@
       </nav>
 </header>
 <body >
-    <h1>Minha Conta</h1>
+  <main>
+  <br>
+  <h2>Consulta por numero da Conta</h2>
+  
+  
+      
+    
+  <p> Informe o numero da conta e PRESSIONE <Strong>TAB</Strong> para realizar a consulta</p>
+<br>
 
-    <main>
-      <div class="input">
-          <span>Conta (*)</span>
-          <input type="text" name="conta" id="conta"  required>
-                       
-                     </div>
-                    
-                     <div class="mb-3 row">
-                      <label for="staticEmail" class="col-sm-2 col-form-label">Agencia</label>
-                      <div class="col-sm-10">
-                        <input type="text" readonly class="form-control-plaintext" id="agencia" >
-                      </div>
-                    </div>
+<form action=""  >
   
-                    <div class="mb-3 row">
-                      <label for="staticEmail" class="col-sm-2 col-form-label">Tipo</label>
-                      <div class="col-sm-10">
-                        <input type="text" readonly class="form-control-plaintext" readonly  id="tipo" >
-                      </div>
-                    </div>
+  <div class="mx-auto" style="width: 300px;">
+    <span class="input-group-text">$
+    
+    <input id="conta" type="text" class="form-control m -15 "  placeholder="Digite o numero da conta">
+  </span>
+  </div>
+  <br>
   
-                    <div class="mb-3 row">
-                      <label for="staticEmail" class="col-sm-2 col-form-label">Saldo</label>
-                      <div class="col-sm-10">
-                        <input type="text" readonly class="form-control-plaintext" readonly id="saldo" >
-                      </div>
-                    </div>
-                    
-                    
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-sm-3">
+        <label  class="text-uppercase"  for="agencia">Agencia</label><br>
+        <input type="text" class="btn btn-dark" class="btn btn-dark col" id="agencia"><br>
+        <label  class="text-uppercase"  for="tipo">Tipo</label><br>
+        <input type="text" class="btn btn-dark" id="tipo"><br>
+        <label  class="text-uppercase"  for="saldo">Saldo</label><br>
+        <input type="text" class="btn btn-dark" id="saldo"><br>
+      </div>
+      <div class="col-6 col-sm-3">
+        <label  class="text-uppercase"  for="nome">nome</label><br>
+        <input type="text" class="btn btn-dark" id="nome"><br>
+        <label  class="text-uppercase"  for="cpf">cpf</label><br>
+        <input type="text" class="btn btn-dark" id="cpf"><br>
+        <label  class="text-uppercase"  for="email">email</label><br>
+        <input type="text" class="btn btn-dark" id="email"><br>
+        <label  class="text-uppercase"  for="telefone">telefone</label><br>
+        <input type="text" class="btn btn-dark" id="telefone"><br>
+      </div>
+  
+      <!-- Force next columns to break to new line -->
+      
+  
+   
+      
+    </div>
+  </div>
+  
+  
+
+  
+</div>
+  <br>
+  <div class="mx-auto" style="width: 150px;">
+ 
+    <input  type="submit" value="Nova Consulta" class="btn btn-secondary" style="margin: 10px;">
+  </div>
+</form>
+</main>
+<style>
+ main{
+   
+   margin-left: 2%;
+ }
+</style>
+  
+   
+      
+    
+                
+                 
+                
+                
+
+  
+         
    
   
+      <script src="main.js"></script>
+  </body>
+  </html>
                    
                   </main>           
   </body>
-  <script src="main.js"></script>
+
 
     
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     
 <!-- Aqui é o  COMEÇO do rodapé -->
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my- 10 border-top bg-dark" style="position:fixed; bottom:0; height:auto; margin-top:40px;
@@ -93,14 +143,15 @@ width:100%; text-align:center">
     </a>
 
     <ul class="nav col-md-4 justify-content-end ">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Todas as Contas</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Minha Conta</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Nova Conta</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Encerrar Conta</a></li>
-      <!--<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>-->
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Todas as Contas</a></li>
+      <li class="nav-item"><a href="home.html" class="nav-link px-2 text-muted">Inicio</a></li>
+      <li class="nav-item"><a href="nova.html" class="nav-link px-2 text-muted">Nova Conta</a></li>
+    
+      
     </ul>
   </footer>
     <!-- Aqui é o FINAL do rodapé -->
 </body>
-<!-- <script src="script.js"></script>-->
+<script src="main2.js"></script>
+<script src="jquery.js"></script>
  </html>
